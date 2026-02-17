@@ -1,168 +1,211 @@
-# 🚀 React From Scratch – Hello World (Vite Version)
+# 🚀 React From Scratch – Function vs Class Component
 
-## 📌 Project: Hello World Using Vite + React
+## 📌 Project: Understanding Function vs Class Components
 
-Welcome to your first React application built using **Vite** ⚡
+In this lesson, we move beyond Hello World.
 
-This is the starting point of our journey in learning React the right way.
+Now we start understanding one of the most important concepts in React:
 
----
+👉 Components.
 
-# 🎯 Why Start With Vite?
+Specifically:
 
-Vite is a modern build tool that is:
+- Function Components
+- Class Components
 
-- ⚡ Extremely fast
-- Simple to set up
-- Lightweight
-- The modern alternative to Create React App
-
-We use Vite because it reflects how real-world modern React projects are built today.
+Understanding the difference between them is essential to thinking like a real React developer.
 
 ---
 
-# 📦 What Is This Project?
+# 🎯 Why Is This Important?
 
-This is a simple **Hello World** React application created using Vite.
+Components are the building blocks of React.
 
-In this lesson, you will understand:
+If you understand:
 
-- How a React project is structured
-- What is `main.jsx`
-- What is `App.jsx`
-- How components are rendered
-- How React connects to the DOM
+- How components work
+- How they render
+- How they differ
+
+You will be able to:
+
+- Read any React code
+- Refactor old projects
+- Understand modern React patterns
+- Write cleaner code
 
 ---
 
 # 🏗️ Project Structure
 
-After creating the Vite app, your folder structure will look like this:
-
 ```
 my-app/
 │
-├── node_modules/
-├── public/
 ├── src/
+│   ├── components/
+│   │   ├── FunctionGreeting.jsx
+│   │   └── ClassGreeting.jsx
+│   │
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── assets/
-│
-├── index.html
-├── package.json
-└── vite.config.js
+│   └── main.jsx
 ```
+
+We organize components inside a `components` folder.
+
+This is how real projects are structured.
 
 ---
 
-# 🔎 Important Files Explained
+# 🔹 Function Component
 
-## 📄 main.jsx
+A Function Component is simply a JavaScript function that returns JSX.
 
-This is the entry point of the React application.
-
-It connects React with the HTML file.
-
-Example:
+## Example: `FunctionGreeting.jsx`
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
-```
-
----
-
-## 📄 App.jsx
-
-This is your main component.
-
-Here is our Hello World example:
-
-```jsx
-const App = () => {
+const FunctionGreeting = () => {
   return (
-    <div className='container'>
-      <h1>👋 مرحباً بك في دورة React</h1>
-      <p>هذا مثال بسيط لتطبيق Hello World باستخدام React.js</p>
-      <button>ابدأ التعلم 🚀</button>
+    <div className='box'>
+      <h2>👋 This is a Function Component</h2>
+      <p>Created using a JavaScript function.</p>
     </div>
   );
 };
+
+export default FunctionGreeting;
+```
+
+✅ Simple  
+✅ Clean  
+✅ Modern approach
+
+Today, most React projects use Function Components.
+
+---
+
+# 🔹 Class Component
+
+A Class Component uses ES6 classes and extends `React.Component`.
+
+## Example: `ClassGreeting.jsx`
+
+```jsx
+import React, { Component } from 'react';
+
+class ClassGreeting extends Component {
+  render() {
+    return (
+      <div className='box'>
+        <h2>🙌 This is a Class Component</h2>
+        <p>Created using a JavaScript class.</p>
+      </div>
+    );
+  }
+}
+
+export default ClassGreeting;
+```
+
+Before React Hooks, this was the standard way to write components.
+
+---
+
+# 📄 App.jsx
+
+Now we import both components and render them.
+
+```jsx
+import FunctionGreeting from './components/FunctionGreeting';
+import ClassGreeting from './components/ClassGreeting';
+
+const App = () => {
+  return (
+    <div className='container'>
+      <h1>📘 Function vs Class Component</h1>
+
+      <FunctionGreeting />
+      <ClassGreeting />
+    </div>
+  );
+};
+
 export default App;
+```
+
+---
+
+# 🎨 Optional Styling (index.css)
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.box {
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
 ```
 
 ---
 
 # ▶️ How To Run The Project
 
-### 1️⃣ Install dependencies
+### Using npm
 
 ```
 npm install
-```
-
-### 2️⃣ Start development server
-
-```
 npm run dev
 ```
 
-Vite will give you a local URL like:
+### Using pnpm
 
 ```
-http://localhost:5173
+pnpm install
+pnpm dev
 ```
 
-Open it in your browser 🎉
+Open the provided local URL in your browser.
 
 ---
 
 # 🧠 What You Learned In This Lesson
 
-- How to create a React app using Vite
-- How React renders components
-- How `App.jsx` works
-- How the development server runs
-
-This is your foundation.
+- What is a Component
+- What is a Function Component
+- What is a Class Component
+- The structural difference between them
+- How to organize components in folders
 
 ---
 
-# 🚀 What’s Next?
+# ⚖️ Function vs Class (Quick Comparison)
 
-Next lessons will cover:
-
-- Components
-- JSX
-- Props
-- State
-- Events
-
-Step by step.
-
-No rush.
-No confusion.
+| Function Component | Class Component        |
+| ------------------ | ---------------------- |
+| Simpler syntax     | More verbose           |
+| Uses Hooks         | Uses lifecycle methods |
+| Modern standard    | Older approach         |
+| Preferred today    | Mostly legacy          |
 
 ---
 
 # 🏁 Final Message
 
-React is not about memorizing code.
+Modern React prefers **Function Components**.
 
-React is about understanding:
+However, understanding Class Components is important because:
 
-- Components
-- Data flow
-- Rendering logic
+- You will see them in older codebases
+- Many companies still maintain legacy projects
 
-Let’s build strong foundations.
+Real developers understand both.
+
+Let’s continue building real knowledge.
 
 Let’s learn React the right way 🚀
