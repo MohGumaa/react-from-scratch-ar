@@ -32,6 +32,14 @@ body {
   font-family: var();
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -61,12 +69,12 @@ button {
   font-family: var(--font);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
+button:hover {
+  opacity: 0.9;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
