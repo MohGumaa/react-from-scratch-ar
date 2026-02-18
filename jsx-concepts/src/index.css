@@ -99,6 +99,14 @@ button:focus-visible {
   background-color: var(--clr-sky);
 }
 
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
