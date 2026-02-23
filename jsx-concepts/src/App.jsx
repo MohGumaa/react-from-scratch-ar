@@ -1,7 +1,10 @@
+import CandidateProfile from "./components/CandidateProfile"
+import ContactForm from "./components/ContactForm"
 import Hello from "./components/Hello"
 import HelloWithoutJSX from "./components/HelloWithoutJSX"
 import ProfileCard from "./components/ProfileCard"
 import ProfileCardWithoutJsx from "./components/ProfileCardWithoutJsx"
+import UserProfile from "./components/UserProfile"
 
 const App = () => {
   return (
@@ -9,7 +12,10 @@ const App = () => {
       {/* <Hello/> */}
       {/* <HelloWithoutJSX/> */}
       {/* <ProfileCard/> */}
-      <ProfileCardWithoutJsx/>
+      {/* <ProfileCardWithoutJsx/> */}
+      <CandidateProfile/>
+      <ContactForm/>
+      <UserProfile/>
     </div>
   )
 }
