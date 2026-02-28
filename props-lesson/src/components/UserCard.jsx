@@ -1,9 +1,11 @@
 
-const UserCard = () => {
+const UserCard = ({name, job, badge}) => {
+
   return (
     <div className="user-card">
-      <h2>Ahmed Ali</h2>
-      <p>Frontend Developer</p>
+      <h2>{name}</h2>
+      <p>{job}</p>
+      {badge}
     </div>
   )
 }
