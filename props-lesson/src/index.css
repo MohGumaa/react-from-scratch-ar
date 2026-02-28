@@ -106,6 +106,7 @@ button:focus-visible {
   background-color: var(--clr-sky);
 }
 
+.card,
 .user-card,
 form {
   border: 1px solid #ccc;
