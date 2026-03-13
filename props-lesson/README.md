@@ -1,16 +1,87 @@
-# React + Vite
+# 🚀 React From Scratch – Props in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This project demonstrates the concept of **Props in React**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Props (short for **Properties**) allow components to receive data from other components. They are one of the core concepts in React and are used to make components **dynamic, reusable, and configurable**.
 
-## React Compiler
+Instead of hardcoding values inside components, props allow us to pass data and customize how components behave.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🎯 What This Lesson Covers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+In this lesson we explore how React components communicate using props.
+
+Main ideas covered include:
+
+- Passing data from parent components to child components
+- Creating reusable components using props
+- Using props to render dynamic content
+- Structuring components for better reusability
+
+---
+
+## 📂 Project Purpose
+
+This repository is part of the **React From Scratch** learning series.
+
+The goal of this project is to demonstrate how developers use **props to pass data between components** and build flexible UI elements.
+
+The **full explanation and walkthrough** are available in the video lesson.
+
+---
+
+## ▶️ How To Run The Project
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+After running the command, open the local development URL in your browser.
+
+---
+
+## 🎥 Full Lesson
+
+The complete explanation of this project is available in the video tutorial.
+
+Watch the full lesson here:
+
+🔗 **Video Link:** <a href="https://youtu.be/ugiwM6r2AC4?si=Ph4MdVhx62tMFes4" target="_blank"><b>React for beginners</b></a>
+
+---
+
+## 🧠 Part of the React From Scratch Series
+
+This project is one lesson from the **React From Scratch** course where we learn React step by step through practical examples.
+
+Other lessons in the series include topics such as:
+
+- React Components
+- Conditional Rendering
+- Rendering Lists
+- State Management
+- React Hooks
+
+---
+
+## 📚 Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Vite
+- JSX
+
+---
+
+🚀 Keep learning and keep building with React.
