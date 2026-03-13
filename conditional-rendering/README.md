@@ -1,18 +1,87 @@
-# React + Vite
+# 🚀 React From Scratch – Conditional Rendering
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This project demonstrates the concept of **Conditional Rendering in React**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+In real-world applications, the UI is not always static. Sometimes we need to show or hide elements depending on different conditions such as user status, permissions, or application state.
 
-## React Compiler
+Conditional Rendering allows React to **display different UI elements based on specific conditions**, which is an essential concept when building dynamic interfaces.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🎯 What This Lesson Covers
 
-## Expanding the ESLint configuration
+In this lesson we explore how React can control what gets rendered in the UI depending on certain conditions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Main ideas covered in this project include:
+
+- Rendering UI based on conditions
+- Showing or hiding elements dynamically
+- Structuring conditional logic inside components
+- Writing cleaner and more readable React components
+
+---
+
+## 📂 Project Purpose
+
+This repository is part of the **React From Scratch** learning series.
+
+The goal of this project is to demonstrate how developers implement **conditional UI behavior inside React components**.
+
+The **full explanation, examples, and walkthrough** are available in the video lesson.
+
+---
+
+## ▶️ How To Run The Project
+
+Install project dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+After running the command, open the local development URL in your browser.
+
+---
+
+## 🎥 Full Lesson
+
+The complete explanation of this project is available in the video tutorial.
+
+Watch the full lesson here:
+
+🔗 **Video Link:** <a href="https://youtu.be/ugiwM6r2AC4?si=Ph4MdVhx62tMFes4" target="_blank"><b>React for beginners</b></a>
+
+---
+
+## 🧠 Part of the React From Scratch Series
+
+This project is one lesson from the **React From Scratch** course where we learn React step by step through practical examples.
+
+Upcoming lessons will cover topics such as:
+
+- Rendering Lists in React
+- Props and Component Communication
+- State Management
+- React Hooks
+- Building real-world UI components
+
+---
+
+## 📚 Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Vite
+- JSX
+
+---
+
+🚀 Keep learning and keep building with React.
