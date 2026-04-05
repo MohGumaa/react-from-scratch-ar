@@ -7,23 +7,23 @@ const UserList = () => {
     {id: 4, name: "Khalid", role: "Admin"},
   ]
 
-  // const userElements = users.map(user => {
-  //   return (
-  //     <div className="card">
-  //       <h2>{user.name}</h2>
-  //       <p>{user.role}</p>
-  //     </div>
-  //   )
-  // })
+  const userElements = users.map((user, index) => {
+    return (
+      <div key={user.id} className="card">
+        <h2>#{index} - {user.name}</h2>
+        <p>{user.role}</p>
+      </div>
+    )
+  })
 
-  const userElements = users
-  .filter(user => user.role === "Admin")
-  .map(user => (
-    <div key={user.id} className="card">
-      <h2>{user.name}</h2>
-      <p>{user.role}</p>
-    </div>
-  ))
+  // const userElements = users
+  // .filter(user => user.role === "Admin")
+  // .map(user => (
+  //   <div className="card">
+  //     <h2>{user.name}</h2>
+  //     <p>{user.role}</p>
+  //   </div>
+  // ))
 
   return (
     <div>
