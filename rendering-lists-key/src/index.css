@@ -1,21 +1,21 @@
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --text-gray: #99a1af;
   --bg: #fff;
-  --bg--gray: #101828;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #61dbfb;
-  --accent-bg: rgba(83, 91, 242, 0.1);
-  --accent-border: rgba(97, 219, 251, 0.5);
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --noto: 'Noto Sans', sans-serif;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--noto);
+  font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -37,9 +37,9 @@
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
-    --accent: #61dbfb;
-    --accent-bg: rgba(83, 91, 242, 0.1);
-    --accent-border: rgba(97, 219, 251, 0.5);
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
@@ -64,8 +64,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
 }
 
 h1,
@@ -73,7 +71,6 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
-  color: var(--accent);
 }
 
 h1 {
@@ -111,33 +108,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  width: 350px;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-button {
-  border: none;
-  border-radius: 0.375rem;
-  background-color: var(--accent);
-  cursor: pointer;
-  padding: 0.375rem 1rem;
-  margin: 0.5rem 0;
-  font-weight: 600;
-  font-size: 0.85rem;
-  font-family: var(--noto);
-}
-
-button:hover {
-  opacity: 0.9;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
