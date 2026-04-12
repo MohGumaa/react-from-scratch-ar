@@ -1,10 +1,13 @@
 import React from 'react'
+import TaskList from './components/TaskList'
+import TodoList from './components/TodoList'
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <TaskList/>
+      <TodoList/>
+    </>
   )
 }
 
