@@ -74,6 +74,12 @@ const TodoList = () => {
       </div>
 
       <div className="flex flex-col gap-3">
+        <div className="flex items-center gap-4 pl-4 pt-4 text-sm text-gray-200">
+          <p className="w-12 text-center">Index</p>
+          <p className="w-16">ID</p>
+          <p className="flex-1">Item</p>
+          <p>Created at</p>
+        </div>
         {list.map((todo, index) => (
           <Todo key={index} index={index} {...todo} />
         ))}
