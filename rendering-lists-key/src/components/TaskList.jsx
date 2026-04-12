@@ -11,7 +11,7 @@ const TaskList = () => {
       <dl className="divide-y divide-white/10">
         {tasks.map((task, index) => {
           return (
-            <div key={index} className="px-4 py-6 sm:px-0">
+            <div className="px-4 py-6 sm:px-0">
               <dt className="text-sm/6 font-medium text-gray-100">{task}</dt>
             </div>
           )
