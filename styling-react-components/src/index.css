@@ -3,3 +3,14 @@
 @theme {
   --font-noto: 'Noto Sans', sans-serif;
 }
+
+button {
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* color: white; */
+}
+
+/* .error {
+  background-color: #f80000;
+} */
