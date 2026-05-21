@@ -1,8 +1,14 @@
+import ActionButton from "./components/ActionButton"
+import InputFiled from "./components/InputFiled"
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-5xl font-bold text-center text-sky-400">Event Handling in React</h1>
-    </div>
+    <>
+      <ActionButton text="save"/>
+      <ActionButton text="delete" bg="bg-red-400"/>
+      <ActionButton text="download" bg="bg-gray-900"/>
+      <InputFiled/>
+    </>
   )
 }
 
